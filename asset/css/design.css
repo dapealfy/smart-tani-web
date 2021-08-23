@@ -1,0 +1,235 @@
+@font-face {
+	font-family: Signika-r;
+	src: url('../font/Signika-Regular.ttf');
+}
+
+@font-face {
+	font-family: Signika-m;
+	src: url('../font/Signika-Medium.ttf');
+}
+
+@font-face {
+	font-family: Signika-b;
+	src: url('../font/Signika-Bold.ttf');
+}
+
+/**{
+	font-family: Quicksand-r, BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+	font-weight: normal;
+}*/
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: Signika-r, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100% !important;
+	height: 100% !important;
+	scroll-behavior: smooth;
+}
+
+#ptn-wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main {
+	width: 100%;
+	flex-grow: 2;
+	position: relative;
+}
+
+/*CUSTOM*/
+.has-text-weight-semibold,
+.title {
+	font-family: Signika-m !important;
+	font-weight: normal !important;
+}
+
+.has-text-weight-bold {
+	font-family: Signika-b !important;
+	font-weight: normal !important;
+}
+
+.has-spaced-between {
+	justify-content: space-between;
+}
+
+/*-------*/
+nav{
+	margin-top: 1rem!important;
+	margin-bottom: 0.8rem!important;
+	background: transparent!important;
+}
+nav.navbar{
+	position: absolute!important;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+}
+nav .navbar-item img{
+	max-height:none;
+	height: 65px!important;
+	/*filter: grayscale(1);*/
+}
+nav .navbar-item:hover{
+	background: none!important;
+}
+.navbar-menu.is-active2{
+	background: #266C31!important;
+}
+.navbar-burger {
+    color: #fff !important;
+    
+}
+#banner{
+	height: 250px;
+    background: #4AB25B;
+}
+
+#banner .container{
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+#banner-home {
+	background: url('../img/header.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 100vh!important;
+}
+.kelompoktani-item figure{
+	position: relative;
+}
+.kelompoktani-item figure figcaption{
+	position: absolute;
+	bottom: 0;
+	padding: 0.5rem 1.5rem;
+}
+.pagination-link.is-current {
+    background-color: #48c774 !important;
+    border-color: #48c774 !important;
+}
+.slick-next::before, .slick-prev::before {
+    font-size: 25px!important;
+    color: grey!important;
+}
+.ptn-home-data .column.has-background-success{
+	border-radius: 10px;
+}
+.ptn-home-data article{
+	border-top: none!important;
+}
+.ptn-home-data iframe{
+	border-radius: 10px;
+}
+.berita-item figure{
+	width: 100%;
+}
+.berita-item figure img{
+    width: 100%;
+	border-radius: 10px;
+	height: 220px;
+	object-fit: cover;
+}
+#ptn-tentang .img-tentang{
+	height: 250px;
+}
+#ptn-tentang img{
+	border-radius: 10px;
+}
+.pembibitan-item > .columns{
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+}
+.pembibitan-item > .columns img{
+	border-radius: 10px;
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+}
+.perawatan-item{
+	border-bottom: 1px solid lightgrey;
+}
+#ptn-kelompoktani2 figure img{
+	border-radius: 8px;
+}
+#ptn-kelompoktani2 .col-left{
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#ptn-kelompoktani2 .col-right{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#ptn-hasilpanen table{
+	border: 1px solid lightgrey;
+}
+#ptn-hasilpanen th{
+	border-bottom: 2px solid lightgrey!important;
+}
+#ptn-login > .columns{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0!important;
+	padding:0!important;
+	background: url('../img/bglogin.jpg');
+}
+#ptn-login .login-wrap{
+	border-radius: 10px;
+}
+#ptn-login .login-wrap figure{
+	height: 100%;
+}
+#ptn-login .login-wrap figure img{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+footer img{
+	height: 75px!important;
+	/*filter: grayscale(1);*/
+}
+.perawatan-modal section{
+	border-radius: 15px;
+	position: relative;
+}
+.perawatan-modal section button{
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+}
+@media screen and (max-width: 768px){
+    .ptn-header-title{
+        margin-top: 30vh;
+    }
+}
